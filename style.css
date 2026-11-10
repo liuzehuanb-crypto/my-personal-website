@@ -1,0 +1,55 @@
+body {
+    background-color: #f2f5f8;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.site-header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+h1 {
+    max-width: 700px;
+    margin: 80px auto 32px;
+    color: #263b50;
+    font-size: 40px;
+    text-align: center;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+section {
+    margin: 0;
+    padding: 24px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+p,
+li {
+    line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
